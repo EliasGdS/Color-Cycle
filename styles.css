@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#color_view {
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+}
+
+#inputs {
+    width: 502px;
+    display: flex;
+    padding: 0;
+    margin-bottom: 2px;
+    justify-content: space-between;
+}
+
+#input_color {
+    text-align: center;
+    padding: 3px;
+}
+
+#input_increment {
+    text-align: center;
+    padding: 3px;
+}
+
+#change_interval {
+    padding: 3px;
+    text-align: center;
+}
+
+#change_interval_value {
+    width: 70px;
+}
+
+.lb_title {
+    display: block;
+    font-family: cursive;
+}
+
+.color_input {
+    width: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+input {
+    text-align: center;
+}
+
+#outputs {
+    margin-top: 5px;
+}
+
+h1 {
+    font-family: cursive;
+}
+
+#btn_start_pause {
+    width: 60px;
+}
+
+.inf {
+    font-family: cursive;
+    font-size: 10pt;
+}
