@@ -1,6 +1,6 @@
 # Color Cycle
 
-Cycle a color value through incremental changes.
+Cycle a color value through incremental changes. Made in HTML5, CSS and Javascript.
 
 CodePen: https://codepen.io/eliasgds/pen/wvMLJJa
 
