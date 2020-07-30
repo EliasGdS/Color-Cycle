@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,44 +10,50 @@
 
 <body>
 
-    
+    <div id="app">
 
-    <h1>Ciclo de Cores</h1>
+        <h1>Ciclo de Cores</h1>
 
-    <div id="inputs">
-        <div id="input_color">
-            <label class="lb_title">Cor (hex)</label>
-            <label class="inf">R</label>
-            <input type="text" class="color_input" id="r_color" maxlength="2" pattern="[a-fA-F0-9]{2,2}">
-            <label class="inf">G</label>
-            <input type="text" class="color_input" id="g_color" maxlength="2" pattern="[a-fA-F0-9]{2,2}">
-            <label class="inf">B</label>
-            <input type="text" class="color_input" id="b_color" maxlength="2" pattern="[a-fA-F0-9]{2,2}"> 
+        <div id="inputs">
+            <div id="input_color">
+                <label class="lb_title">Cor (hex)</label>
+                <label class="inf">R</label>
+                <input type="text" class="color_input" id="r_color" maxlength="2" pattern="[a-fA-F0-9]{2,2}">
+                <label class="inf">G</label>
+                <input type="text" class="color_input" id="g_color" maxlength="2" pattern="[a-fA-F0-9]{2,2}">
+                <label class="inf">B</label>
+                <input type="text" class="color_input" id="b_color" maxlength="2" pattern="[a-fA-F0-9]{2,2}">
+            </div>
+
+            <div id="input_increment">
+                <label class="lb_title">Valor de Incremento (dec)</label>
+                <label class="inf">R</label>
+                <input type="number" class="color_input" id="r_increment" maxlength="2" min="0" pattern="[0-9]{2,2}">
+                <label class="inf">G</label>
+                <input type="number" class="color_input" id="g_increment" maxlength="2" min="0" pattern="[0-9]{2,2}">
+                <label class="inf">B</label>
+                <input type="number" class="color_input" id="b_increment" maxlength="2" min="0" pattern="[0-9]{2,2}">
+            </div>
+
+            <div id="change_interval">
+                <label class="lb_title">Velocidade (ms)</label>
+                <input type="number" class="color_input" id="change_interval_value" min="0" step="250">
+            </div>
+
         </div>
 
-        <div id="input_increment">
-            <label class="lb_title">Valor de Incremento (dec)</label>
-            <label class="inf">R</label>
-            <input type="number" class="color_input" id="r_increment" maxlength="2" min="0" pattern="[0-9]{2,2}">
-            <label class="inf">G</label>
-            <input type="number" class="color_input" id="g_increment" maxlength="2" min="0" pattern="[0-9]{2,2}">
-            <label class="inf">B</label>
-            <input type="number" class="color_input" id="b_increment" maxlength="2" min="0" pattern="[0-9]{2,2}">
-        </div>
-
-        <div id="change_interval">
-            <label class="lb_title">Velocidade (ms)</label>
-            <input type="number" class="color_input" id="change_interval_value" min="0" step="250">
+        <div id="outputs">
+            <button type="button" id="btn_start_pause" onclick="startPause()">Iniciar</button>
+            <input type="text" id="color_output" readonly>
         </div>
 
     </div>
-    <div id="color_view"></div>
 
-    <div id="outputs">
-        <button type="button" id="btn_start_pause" onclick="startPause()">Iniciar</button>
-        <input type="text" id="color_output" readonly>
-    </div>
-
+    <footer>
+        <p>Made whit 💜 by Elias Gomes da Silva <a href="https://github.com/EliasGdS/Color-Cycle"
+                target="_blank"><img src="https://i.pinimg.com/originals/b1/5e/ed/b15eedbdafbbdbca3249e3942f4faf3b.png"
+                    width="20px"></a> </p>
+    </footer>
 
     <script lang="javascript" src="main.js"></script>
 </body>
