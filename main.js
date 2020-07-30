@@ -92,8 +92,9 @@ function incrementColor() {
             }
 
             color = "#" + (isColorHex(r_hex, g_hex, b_hex)).join('');
+            document.body.style.backgroundColor = color;
+            document.body.parentElement.style.backgroundColor = color;
             document.getElementById("color_output").value = color;
-            document.getElementById("color_view").style.backgroundColor = color;
 
             if (r >= 255 && g >= 255 && b >= 255) {
                 startPause();
